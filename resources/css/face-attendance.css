@@ -1,0 +1,219 @@
+/* =====================================================
+   WRAPPER WAJIB (FILAMENT SAFE)
+===================================================== */
+.face-attendance-page {
+    width: 100%;
+}
+
+/* =====================================================
+   LAYOUT
+===================================================== */
+.face-attendance-page .face-container {
+    display: grid;
+    grid-template-columns: 1.3fr 1fr;
+    gap: 28px;
+    padding: 24px;
+}
+
+@media (max-width: 1024px) {
+    .face-attendance-page .face-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* =====================================================
+   CARD
+===================================================== */
+.face-attendance-page .card {
+    background: #ffffff;
+    border-radius: 18px;
+    padding: 22px 24px;
+    box-shadow: 0 10px 28px rgba(0,0,0,0.08);
+    display: flex;
+    flex-direction: column;
+}
+
+.face-attendance-page .camera-card {
+    min-height: 100%;
+}
+
+/* =====================================================
+   TEXT
+===================================================== */
+.face-attendance-page .card h2 {
+    font-size: 20px;
+    font-weight: 700;
+    color: #1e293b;
+    margin-bottom: 6px;
+}
+
+.face-attendance-page .subtitle {
+    font-size: 14px;
+    color: #64748b;
+}
+
+.face-attendance-page .center-text {
+    margin-top: 12px;
+    text-align: center;
+}
+
+.face-attendance-page .empty-text {
+    margin-top: 24px;
+    text-align: center;
+}
+
+/* =====================================================
+   CAMERA
+===================================================== */
+.face-attendance-page .camera-box {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    min-height: 420px;
+    max-height: 560px;
+    margin-top: 18px;
+    border-radius: 18px;
+    overflow: hidden;
+    background: #000;
+}
+
+.face-attendance-page .camera-box video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@media (max-width: 768px) {
+    .face-attendance-page .camera-box {
+        min-height: 280px;
+        max-height: 340px;
+    }
+}
+
+/* =====================================================
+   SCAN BORDER
+===================================================== */
+.face-attendance-page .scan-border {
+    position: absolute;
+    inset: 0;
+    border-radius: 18px;
+    border: 3px solid rgba(59,130,246,0.6);
+    pointer-events: none;
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% { opacity: .25; }
+    50% { opacity: .85; }
+    100% { opacity: .25; }
+}
+
+/* =====================================================
+   ALERT
+===================================================== */
+.face-attendance-page .alert {
+    display: none;
+    margin-top: 12px;
+    padding: 12px 14px;
+    border-radius: 10px;
+    font-size: 14px;
+}
+
+.face-attendance-page .alert.success {
+    background: #dcfce7;
+    color: #166534;
+}
+
+.face-attendance-page .alert.error {
+    background: #fee2e2;
+    color: #991b1b;
+}
+
+/* =====================================================
+   TABLE
+===================================================== */
+.face-attendance-page .table-wrapper {
+    margin-top: 14px;
+    border-radius: 14px;
+    overflow: hidden;
+    border: 1px solid #e5e7eb;
+}
+
+.face-attendance-page table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+}
+
+.face-attendance-page thead {
+    background: #f1f5f9;
+}
+
+.face-attendance-page th,
+.face-attendance-page td {
+    padding: 12px 14px;
+    text-align: left;
+}
+
+.face-attendance-page tbody tr {
+    border-top: 1px solid #e5e7eb;
+}
+
+.face-attendance-page tbody tr:hover {
+    background: #f8fafc;
+}
+
+/* =====================================================
+   BADGE
+===================================================== */
+.face-attendance-page .badge {
+    display: inline-block;
+    padding: 4px 12px;
+    font-size: 12px;
+    font-weight: 600;
+    border-radius: 999px;
+}
+
+.face-attendance-page .badge-success {
+    background: #dcfce7;
+    color: #166534;
+}
+
+.face-attendance-page .badge-warning {
+    background: #fef3c7;
+    color: #92400e;
+}
+
+/* =====================================================
+   BUTTON ABSEN
+===================================================== */
+.face-attendance-page .attendance-actions {
+    display: flex;
+    gap: 14px;
+    justify-content: center;
+    margin-top: 16px;
+}
+
+.face-attendance-page .btn {
+    padding: 12px 26px;
+    border-radius: 12px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    border: none;
+}
+
+.face-attendance-page .btn-primary {
+    background: #2563eb;
+    color: #ffffff;
+}
+
+.face-attendance-page .btn-secondary {
+    background: #16a34a;
+    color: #ffffff;
+}
+
+.face-attendance-page .btn:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
