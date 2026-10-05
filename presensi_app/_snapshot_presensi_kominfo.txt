@@ -1,0 +1,80 @@
+=== BASIC ===
+/home/dafa/Projects/presensi_kominfo
+Tue Feb 10 02:12:12 PM WIB 2026
+
+=== GIT ===
+origin	https://github.com/dafaarchlinux/presensi_kominfo.git (fetch)
+origin	https://github.com/dafaarchlinux/presensi_kominfo.git (push)
+main
+89643e3 Fix face-api models and add /models alias for camera features
+## main...origin/main
+
+=== TOP-LEVEL FILES/FOLDERS ===
+drwxrwxr-x dafa dafa   4.0 KB Tue Feb 10 14:12:12 2026 .
+drwxrwxr-x dafa docker 4.0 KB Mon Feb  9 18:24:08 2026 ..
+.rw-rw-r-- dafa dafa   252 B  Mon Feb  9 18:23:04 2026 .editorconfig
+.rw-rw-r-- dafa dafa   1.1 KB Mon Feb  9 18:42:58 2026 .env
+.rw-rw-r-- dafa dafa   1.1 KB Mon Feb  9 18:23:04 2026 .env.example
+drwxrwxr-x dafa dafa   4.0 KB Tue Feb 10 14:12:12 2026 .git
+.rw-rw-r-- dafa dafa   186 B  Mon Feb  9 18:23:04 2026 .gitattributes
+.rw-rw-r-- dafa dafa   283 B  Mon Feb  9 18:23:04 2026 .gitignore
+.rw-rw-r-- dafa dafa   363 B  Tue Feb 10 14:12:12 2026 _snapshot_presensi_kominfo.txt
+drwxrwxr-x dafa dafa   4.0 KB Mon Feb  9 18:23:04 2026 app
+.rw-rw-r-- dafa dafa   425 B  Mon Feb  9 18:23:04 2026 artisan
+drwxrwxr-x dafa dafa   4.0 KB Mon Feb  9 18:23:04 2026 bootstrap
+.rw-rw-r-- dafa dafa   2.9 KB Mon Feb  9 18:23:04 2026 composer.json
+.rw-rw-r-- dafa dafa   381 KB Mon Feb  9 18:23:04 2026 composer.lock
+drwxrwxr-x dafa dafa   4.0 KB Mon Feb  9 18:23:04 2026 config
+drwxrwxr-x dafa dafa   4.0 KB Mon Feb  9 18:23:04 2026 database
+drwxrwxr-x dafa dafa   4.0 KB Mon Feb  9 18:34:24 2026 node_modules
+.rw-rw-r-- dafa dafa    99 KB Mon Feb  9 18:33:56 2026 package-lock.json
+.rw-rw-r-- dafa dafa   481 B  Mon Feb  9 18:23:04 2026 package.json
+.rw-rw-r-- dafa dafa   1.3 KB Mon Feb  9 18:23:04 2026 phpunit.xml
+.rw-rw-r-- dafa dafa    18 B  Mon Feb  9 18:23:04 2026 postcss.config.js
+drwxrwxr-x dafa dafa   4.0 KB Mon Feb  9 19:17:51 2026 public
+.rw-rw-r-- dafa dafa   3.8 KB Mon Feb  9 18:23:04 2026 README.md
+drwxrwxr-x dafa dafa   4.0 KB Mon Feb  9 18:23:04 2026 resources
+drwxrwxr-x dafa dafa   4.0 KB Mon Feb  9 18:23:04 2026 routes
+drwxrwxr-x dafa dafa   4.0 KB Mon Feb  9 18:23:04 2026 storage
+.rw-rw-r-- dafa dafa   246 B  Mon Feb  9 18:23:04 2026 tailwind.config.js
+drwxrwxr-x dafa dafa   4.0 KB Mon Feb  9 18:23:04 2026 tests
+drwxrwxr-x dafa dafa   4.0 KB Mon Feb  9 18:32:45 2026 vendor
+.rw-rw-r-- dafa dafa   365 B  Mon Feb  9 18:23:04 2026 vite.config.js
+
+=== IMPORTANT FILES EXIST? ===
+OK  .env
+OK  .env.example
+OK  composer.json
+OK  composer.lock
+OK  package.json
+OK  package-lock.json
+OK  vite.config.js
+OK  public/index.php
+OK  public/.htaccess
+
+=== PUBLIC (maxdepth 3) ===
+public/index.php
+public/face-api/face-api.min.js
+public/face-api/models/ssd_mobilenetv1_model-shard2
+public/face-api/models/face_landmark_68_model-shard1
+public/face-api/models/face_recognition_model-shard2
+public/face-api/models/tiny_face_detector_model-shard1
+public/face-api/models/mtcnn_model-weights_manifest.json
+public/face-api/models/face_landmark_68_tiny_model-shard1
+public/face-api/models/face_landmark_68_model-weights_manifest.json
+public/face-api/models/ssd_mobilenetv1_model-shard1
+public/face-api/models/ssd_mobilenetv1_model-weights_manifest.json
+public/face-api/models/tiny_face_detector_model-weights_manifest.json
+public/face-api/models/age_gender_model-shard1
+public/face-api/models/age_gender_model-weights_manifest.json
+public/face-api/models/face_expression_model-shard1
+public/face-api/models/face_expression_model-weights_manifest.json
+public/face-api/models/face_recognition_model-shard1
+public/face-api/models/mtcnn_model-shard1
+public/face-api/models/face_landmark_68_tiny_model-weights_manifest.json
+public/face-api/models/face_recognition_model-weights_manifest.json
+public/.htaccess
+
+=== STORAGE/CACHE PERMISSION CHECK ===
+drwxrwxr-x dafa dafa 4.0 KB Mon Feb  9 18:32:45 2026 bootstrap/cache
+drwxrwxr-x dafa dafa 4.0 KB Mon Feb  9 18:23:04 2026 storage

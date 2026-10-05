@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap');
+
+.face-wrapper {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: 2rem;
+    padding: 2rem;
+    background: #f8fafc;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05);
+    min-height: 80vh;
+    align-items: stretch;
+}
+
+.face-left {
+    background: #ffffff;
+    padding: 2rem;
+    border-radius: 14px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.face-right {
+    background: #ffffff;
+    padding: 2rem;
+    border-radius: 14px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #0f172a;
+    margin-bottom: 0.25rem;
+}
+
+.subtitle {
+    font-size: 0.95rem;
+    color: #64748b;
+    margin-bottom: 1.5rem;
+}
+
+.status-box {
+    background: #0f172a;
+    color: #ffffff;
+    padding: 1rem 1.25rem;
+    border-radius: 10px;
+    font-size: 0.95rem;
+    font-weight: 500;
+    margin-bottom: 1.25rem;
+    text-align: center;
+    box-shadow: 0 4px 6px -1px rgba(15, 23, 42, 0.2);
+    letter-spacing: 0.025em;
+}
+
+.camera-box {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 4/3;
+    background: #000000;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: inset 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.camera-box video, 
+.camera-box canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.title-small {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #1e293b;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #f1f5f9;
+}
+
+.preview-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75krem;
+}
+
+.step-indicator {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: #475569;
+    transition: all 0.3s ease;
+}
+
+.step-indicator.active {
+    background: #eff6ff;
+    border-color: #3b82f6;
+    color: #1d4ed8;
+    box-shadow: 0 4px 12px rgba(59, 130, 246, 0.1);
+}
+
+.step-indicator.completed {
+    background: #f0fdf4;
+    border-color: #22c55e;
+    color: #15803d;
+}
+
+@media (max-width: 1024px) {
+    .face-wrapper {
+        grid-template-columns: 1fr;
+    }
+}
